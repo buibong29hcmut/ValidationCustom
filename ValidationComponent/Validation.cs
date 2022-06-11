@@ -13,6 +13,7 @@ namespace ValidationComponent
         public static bool PropertyValueIsValid(Type t, string enteredValue, string elementName, out string errorMessage)
         {
             PropertyInfo prop = t.GetProperty(elementName);
+            ////ádasdasdasdasdasdasd
 
             Attribute[] attributes = prop.GetCustomAttributes().ToArray();
 
@@ -70,7 +71,14 @@ namespace ValidationComponent
         {
             if (Regex.IsMatch(enteredValue, regularExpressionAttribute.Pattern))
                 return true;
+            try
+            {
 
+            }
+            catch
+            {
+
+            }
             return false;
         }
     }
