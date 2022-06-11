@@ -69,8 +69,7 @@ namespace ValidationComponent
 
         private static bool FieldPatternMatchIsValid(RegularExpressionAttribute regularExpressionAttribute, string enteredValue)
         {
-            if (Regex.IsMatch(enteredValue, regularExpressionAttribute.Pattern))
-                return true;
+            int a = 0;
             try
             {
 
